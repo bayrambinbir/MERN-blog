@@ -5,3 +5,4 @@ Technologies:
 * Tailwind CSS
 * React
 * Flowbite React
+* react-icons
