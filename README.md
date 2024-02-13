@@ -10,3 +10,7 @@ Front End Technologies:
 Back End Technologies:
 * Express
 * nodemon
+* mongoose
+
+Other Technologies:
+* dotenv
