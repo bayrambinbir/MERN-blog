@@ -11,6 +11,7 @@ Back End Technologies:
 * Express
 * nodemon
 * mongoose
+* bcryptjs (Hashing the passwords)
 
 Other Technologies:
 * dotenv
