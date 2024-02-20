@@ -1,4 +1,3 @@
-import express from "express";
 import User from "../models/user-model.js";
 import bcyrptjs from "bcryptjs";
 import { errorHandler } from "../utils/error.js";
