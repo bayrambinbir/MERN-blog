@@ -10,7 +10,6 @@ export default function signup() {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value.trim() });
-    console.log(formData);
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,13 +19,14 @@ export default function signup() {
     }
     try {
       setLoading(true);
+      setErrorMessage(null)
       const res = await fetch("/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
       const data = await res.json();
-      if (data.success == false) {
+      if (data.success === false) {
         return setErrorMessage(data.message);
       }
       setLoading(false);
@@ -102,7 +102,7 @@ export default function signup() {
           </form>
           <div className="flex gap-2 text-sm mt-5">
             <span>Have an account?</span>
-            <Link to="sign-in" className="text-blue-500">
+            <Link to="/sign-in" className="text-blue-500">
               Sign In
             </Link>
           </div>
