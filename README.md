@@ -15,3 +15,4 @@ Back End Technologies:
 
 Other Technologies:
 * dotenv
+* Google Firebase
