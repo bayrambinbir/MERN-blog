@@ -6,6 +6,7 @@ Front End Technologies:
 * React
 * Flowbite React
 * react-icons
+* react-circular-progressbar
 
 Back End Technologies:
 * Express
