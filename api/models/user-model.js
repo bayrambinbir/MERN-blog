@@ -21,6 +21,10 @@ const userSchema = new mongoose.Schema(
       default:
         "https://wallpapers.com/images/featured-full/cool-profile-picture-87h46gcobjl5e4xu.jpg",
     },
+    isAdmin: {
+      type: Boolean,
+      default: false
+    }
   },
   { timestamps: true }
 );
