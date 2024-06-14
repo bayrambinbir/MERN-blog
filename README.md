@@ -18,3 +18,4 @@ Other Technologies:
 * dotenv
 * Google Firebase
 * cookie-parser
+* npm i react-quill (cd client)
