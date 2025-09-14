@@ -29,6 +29,11 @@ app.listen(3000, () => {
   console.log("Server is running on port 3000!");
 });
 
+// Add this for eBay compliance
+app.post('/ebay-notification', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/post", postRoutes);
